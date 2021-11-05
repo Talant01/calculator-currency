@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./main.css" />
+    <title>Currency Calculator</title>
+  </head>
+  <body>
+    <form class="container">
+      <div class="display">
+        <div class="types">
+          <div class="basic active">Basic</div>
+          <div class="currency">Currency</div>
+        </div>
+        <input class="calc-area" type="text" placeholder="0" value="0" />
+        <div class="cur-area hide">
+          <div class="row">
+            <select class="from" name="from" id="from">
+              <option value="usd">USD</option>
+              <option value="kgs">KGS</option>
+              <option value="rub">RUB</option>
+              <option value="eur">EUR</option>
+              <option value="kzt">KZT</option>
+              <option value="cny">CNY</option>
+              <option value="hkd">HKD</option>
+              <option value="inr">INR</option>
+            </select>
+            <input
+              class="from"
+              type="text"
+              value="0"
+              placeholder="0"
+              disabled
+            />
+            <select class="to" name="to" id="to">
+              <option value="usd">USD</option>
+              <option value="kgs">KGS</option>
+              <option value="rub">RUB</option>
+              <option value="eur">EUR</option>
+              <option value="kzt">KZT</option>
+              <option value="cny">CNY</option>
+              <option value="hkd">HKD</option>
+              <option value="inr">INR</option>
+            </select>
+            <input class="to" type="text" value="0" placeholder="0" disabled />
+          </div>
+        </div>
+      </div>
+      <div class="buttons">
+        <div class="row">
+          <input class="calcReset" type="button" value="AC" />
+          <input class="calcBtn" type="button" value="(" />
+          <input class="calcBtn" type="button" value=")" />
+          <input class="calcBtn" type="button" value="/" />
+        </div>
+        <div class="row">
+          <input class="calcBtn" type="button" value="7" />
+          <input class="calcBtn" type="button" value="8" />
+          <input class="calcBtn" type="button" value="9" />
+          <input class="calcBtn" type="button" value="*" />
+        </div>
+        <div class="row">
+          <input class="calcBtn" type="button" value="4" />
+          <input class="calcBtn" type="button" value="5" />
+          <input class="calcBtn" type="button" value="6" />
+          <input class="calcBtn" type="button" value="-" />
+        </div>
+        <div class="row">
+          <input class="calcBtn" type="button" value="1" />
+          <input class="calcBtn" type="button" value="2" />
+          <input class="calcBtn" type="button" value="3" />
+          <input class="calcBtn" type="button" value="+" />
+        </div>
+        <div class="row">
+          <input class="calcDel" type="button" value="C" />
+          <input class="calcBtn" type="button" value="0" />
+          <input class="calcBtn" type="button" value="." />
+          <input class="calcResult" type="button" value="=" />
+        </div>
+      </div>
+    </form>
+    <script src="./main.js"></script>
+  </body>
+</html>
